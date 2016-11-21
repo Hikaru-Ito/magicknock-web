@@ -1,0 +1,24 @@
+{
+  "name": "leapcast-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.2.0",
+    "metalsmith-layouts": "^1.6.5",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0"
+  },
+  "devDependencies": {
+    "gulp-image": "^2.7.2"
+  }
+}

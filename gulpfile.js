@@ -46,7 +46,7 @@ gulp.task('sass', ()=> {
   .pipe(reload({ stream: true }))
 })
 
-gulp.task('build', ['sass', 'image'], (cb) => {
+gulp.task('build', (cb) => {
   exec('node index.js', (err) => {
     cb(err)
   })
@@ -59,4 +59,5 @@ gulp.task('deploy', (cb) => {
 gulp.task('watch', ['browsersync'], () => {
   gulp.watch(paths.src, ['build'])
   gulp.watch(paths.scss, ['sass'])
+  gulp.watch(paths.image, ['image'])
 })

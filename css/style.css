@@ -34,8 +34,14 @@ time {
   color: #ccc;
   margin: 16px 0; }
 
+.container {
+  padding: 16px; }
+
 main {
   text-align: center; }
+  main iframe {
+    width: 100%;
+    margin-top: 70px; }
   main h2 {
     padding: 36px 0;
     font-weight: 100;

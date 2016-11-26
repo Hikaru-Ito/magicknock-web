@@ -41,7 +41,14 @@ time {
 
 header {
 }
+.container {
+  padding:16px;
+}
 main {
+  iframe {
+    width:100%;
+    margin-top:70px;
+  }
   text-align: center;
   h2 {
     padding:36px 0;

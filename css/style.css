@@ -7,7 +7,9 @@
  * Custom CSS
  */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: avenir next, "Noto Sans Japanese";
+  background-image: url(/images/bg.png);
+  background-size: cover;
   margin: 0; }
 
 h1 {
@@ -34,8 +36,142 @@ time {
   color: #ccc;
   margin: 16px 0; }
 
+.bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100; }
+
+#cover {
+  position: fixed;
+  background: rgba(3, 6, 38, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -99; }
+
+#impression {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  overflow: hidden;
+  text-align: center; }
+  #impression * {
+    color: #fff; }
+  #impression .main-phrase {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 100;
+    color: #fff;
+    padding: 64px 0 64px 0; }
+    #impression .main-phrase br {
+      display: none; }
+  #impression .main-description {
+    text-align: center; }
+    #impression .main-description .logo {
+      width: 320px;
+      height: auto; }
+    #impression .main-description .text {
+      margin-top: 36px;
+      margin-bottom: 24px;
+      padding: 0 24px;
+      font-size: 14px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      line-height: 26px; }
+    #impression .main-description .play-button {
+      position: relative;
+      padding: 16px 48px;
+      padding-left: 72px;
+      font-size: 14px;
+      font-weight: 200;
+      display: inline-block;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.1); }
+      #impression .main-description .play-button img {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 10px;
+        left: 28px; }
+      #impression .main-description .play-button:hover {
+        background: rgba(255, 255, 255, 0.3); }
+
+#advance-sns {
+  margin-top: 64px;
+  padding: 24px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 26px; }
+  #advance-sns .container {
+    position: relative; }
+  #advance-sns iframe {
+    left: 100px;
+    position: absolute; }
+
+#basic-unit-01 {
+  padding: 64px 0; }
+  #basic-unit-01 h1 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 36px 0; }
+  #basic-unit-01 .text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 32px;
+    margin: 32px 0; }
+  #basic-unit-01 .badge {
+    position: relative;
+    background: #F1F1F1;
+    padding: 16px 24px;
+    padding-left: 48px;
+    font-size: 14px;
+    display: inline;
+    border-radius: 4px; }
+    #basic-unit-01 .badge img {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      top: 8px;
+      left: 8px; }
+
+#basic-unit-02 {
+  text-align: center;
+  padding: 64px 0;
+  background: #020626; }
+  #basic-unit-02 * {
+    color: #fff; }
+  #basic-unit-02 h1 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 36px 0; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 10; }
+  header h1 {
+    color: #fff; }
+
 .container {
   padding: 16px; }
+
+.clear:after {
+  display: block;
+  content: '';
+  clear: both; }
 
 main {
   text-align: center; }
@@ -55,3 +191,35 @@ main {
 footer {
   text-align: center;
   padding: 60px 0; }
+
+@media (max-width: 550px) {
+  .bg-video {
+    display: none; }
+  br {
+    display: none; }
+  #impression {
+    padding-top: 32px;
+    padding-bottom: 32px; }
+    #impression .main-phrase {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: 100;
+      color: #fff;
+      padding: 64px 0 64px 0; }
+      #impression .main-phrase br {
+        display: inline; }
+    #impression .logo {
+      width: 240px !important;
+      height: auto; }
+  #advance-sns {
+    margin-top: 64px;
+    padding: 24px 0;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 26px; }
+    #advance-sns iframe {
+      display: block;
+      position: static; } }

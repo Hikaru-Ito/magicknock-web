@@ -15,7 +15,7 @@ const image = require('gulp-image')
  */
 const paths = {
   scss: './style/**.scss',
-  image: './images/*',
+  image: './images/logo-image.png',
   cssDir: './build/css',
   src: ['./src/**/*', './layouts/**/*']
 }

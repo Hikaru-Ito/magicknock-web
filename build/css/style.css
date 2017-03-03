@@ -25,7 +25,8 @@ h4 {
   font-size: 1.4rem; }
 
 h5 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin: 0; }
 
 img {
   max-width: 98%; }
@@ -104,7 +105,7 @@ time {
 #advance-sns {
   margin-top: 64px;
   padding: 24px 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 14px;
   font-weight: 200;
@@ -117,7 +118,8 @@ time {
     position: absolute; }
 
 #basic-unit-01 {
-  padding: 64px 0; }
+  padding: 64px 0;
+  background: #FFF; }
   #basic-unit-01 h1 {
     font-size: 24px;
     font-weight: 300;
@@ -142,6 +144,9 @@ time {
       height: 32px;
       top: 8px;
       left: 8px; }
+  #basic-unit-01 .video-demo {
+    width: 100%;
+    margin-top: 64px; }
 
 #basic-unit-02 {
   text-align: center;
@@ -149,10 +154,222 @@ time {
   background: #020626; }
   #basic-unit-02 * {
     color: #fff; }
+  #basic-unit-02 .text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 32px;
+    margin: 32px 0; }
   #basic-unit-02 h1 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 36px 0; }
+  #basic-unit-02 .wave {
+    padding-top: 200px;
+    padding-bottom: 200px; }
+    #basic-unit-02 .wave .wave-line {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      content: ''; }
+    #basic-unit-02 .wave .wave-bg {
+      position: absolute;
+      top: -240px;
+      height: 495px;
+      width: 100%;
+      right: 0;
+      left: 0;
+      background: url(/images/wave-bg2.png);
+      background-position: center;
+      background-size: auto 495px; }
+    #basic-unit-02 .wave .wave-small {
+      position: absolute;
+      right: 50%;
+      top: -130px;
+      margin-right: 18%;
+      width: 19px;
+      height: 265px;
+      background: url(/images/wave-small.png);
+      background-size: cover;
+      content: ''; }
+    #basic-unit-02 .wave .wave-big {
+      position: absolute;
+      left: 50%;
+      top: -240px;
+      width: 35px;
+      height: 495px;
+      margin-left: 18%;
+      background: url(/images/wave-big.png);
+      background-size: cover;
+      content: ''; }
+  #basic-unit-02 .taps .tap-small img.finger-icon, #basic-unit-02 .taps .tap-big img.finger-icon {
+    width: 64px;
+    height: auto; }
+  #basic-unit-02 .taps h4 {
+    display: block;
+    width: 240px;
+    line-height: 56px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin: 24px auto; }
+  #basic-unit-02 .taps .tap-small h4 {
+    border: 1px solid #63C3F6;
+    color: #63C3F6; }
+  #basic-unit-02 .taps .tap-big h4 {
+    border: 1px solid #F59D00;
+    color: #F59D00; }
+
+#basic-unit-03 {
+  text-align: center;
+  padding: 64px 0;
+  background: #fff; }
+  #basic-unit-03 .text {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 32px;
+    margin: 32px 0; }
+  #basic-unit-03 h2 {
     font-size: 24px;
     font-weight: 300;
     margin: 36px 0; }
+  #basic-unit-03 .try-text {
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 32px; }
+  #basic-unit-03 .button-wrapper {
+    width: 50%;
+    float: left; }
+  #basic-unit-03 .tap-button {
+    margin: 16px 24px;
+    height: 64px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer; }
+    #basic-unit-03 .tap-button h5 {
+      padding: 8px 0 4px 0;
+      font-size: 18px;
+      font-weight: 200; }
+    #basic-unit-03 .tap-button p {
+      font-size: 14px;
+      font-weight: 100; }
+  #basic-unit-03 #light-button {
+    background: #2E97DE;
+    border: 1px solid #227EBA;
+    border-bottom: 3px solid #227EBA;
+    color: #fff; }
+    #basic-unit-03 #light-button:active {
+      height: 67px;
+      background: #227EBA;
+      border-bottom: 0px solid #227EBA; }
+  #basic-unit-03 #strong-button {
+    background: #F59D00;
+    border: 1px solid #E87F04;
+    border-bottom: 3px solid #E87F04;
+    color: #fff; }
+    #basic-unit-03 #strong-button:active {
+      height: 67px;
+      background: #E87F04;
+      border-bottom: 0px solid #227EBA; }
+
+#magictv {
+  position: relative;
+  border: 9px solid #333;
+  height: 400px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #020626; }
+  #magictv .main-window {
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    bottom: 12%;
+    content: '';
+    width: 65%;
+    background: #33495F; }
+    #magictv .main-window .img-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: ''; }
+  #magictv .side-menu {
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    right: 3%;
+    width: 27%;
+    overflow: hidden;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-perspective: 1000; }
+  #magictv .menu .title {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: 0s;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-perspective: 1000; }
+    #magictv .menu .title.exec {
+      background: #F2C500 !important; }
+  #magictv .menu.selected .title {
+    background: #00BD9C; }
+  #magictv .top-menu {
+    width: 95%;
+    margin-top: 6px;
+    margin-bottom: 6px; }
+    #magictv .top-menu > .title {
+      width: 100%;
+      height: 88px;
+      line-height: 88px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 2px; }
+  #magictv .child-menu {
+    margin: 2px 0 2px 24px; }
+    #magictv .child-menu > .title {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.4);
+      border-radius: 2px;
+      width: 100%;
+      height: 46px;
+      line-height: 46px; }
+  #magictv .child-menu {
+    display: none; }
+    #magictv .child-menu.show {
+      display: block; }
+  #magictv .disnon {
+    display: none; }
+
+#magictv-bg {
+  width: 100%;
+  height: auto; }
 
 header {
   position: fixed;
@@ -190,7 +407,9 @@ main {
 
 footer {
   text-align: center;
-  padding: 60px 0; }
+  padding: 60px 0;
+  background: #212121;
+  color: #fff; }
 
 @media (max-width: 550px) {
   .bg-video {

@@ -9,14 +9,18 @@ const browserSync = require('browser-sync')
 const reload = browserSync.reload
 const exec = require('child_process').exec
 const image = require('gulp-image')
+const babel = require("gulp-babel")
+const plumber = require('gulp-plumber')
+const uglify = require('gulp-uglify')
 
 /**
  * Paths
  */
 const paths = {
   scss: './style/**.scss',
-  image: './images/logo-image.png',
+  image: './images/**',
   cssDir: './build/css',
+  js: './script/**',
   src: ['./src/**/*', './layouts/**/*']
 }
 
@@ -33,6 +37,14 @@ gulp.task('browsersync', () => {
   })
 })
 
+gulp.task('babel', function() {
+  gulp.src(paths.js)
+    .pipe(plumber())
+    .pipe(babel())
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/script'))
+})
+
 gulp.task('image', function () {
   gulp.src(paths.image)
     .pipe(image())
@@ -41,6 +53,7 @@ gulp.task('image', function () {
 
 gulp.task('sass', ()=> {
   gulp.src(paths.scss)
+  .pipe(plumber())
   .pipe(sass())
   .pipe(gulp.dest(paths.cssDir))
   .pipe(reload({ stream: true }))
@@ -60,4 +73,5 @@ gulp.task('watch', ['browsersync'], () => {
   gulp.watch(paths.src, ['build'])
   gulp.watch(paths.scss, ['sass'])
   gulp.watch(paths.image, ['image'])
+  gulp.watch(paths.js, ['babel'])
 })

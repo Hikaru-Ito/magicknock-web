@@ -19,6 +19,10 @@
     "metalsmith-permalinks": "^0.5.0"
   },
   "devDependencies": {
-    "gulp-image": "^2.7.2"
+    "babel-preset-es2015": "^6.22.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-image": "^2.7.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^2.0.1"
   }
 }

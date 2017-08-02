@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e73d314-a991-4d41-93b9-1a3c45a88f39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/stract-logo.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/style.css" afterPath="$PROJECT_DIR$/build/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/index.html" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/layout.html" afterPath="$PROJECT_DIR$/layouts/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/style.scss" afterPath="$PROJECT_DIR$/style/style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/layouts/layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="197" column="96" lean-forward="false" selection-start-line="197" selection-start-column="96" selection-end-line="197" selection-end-column="96" />
+              <caret line="197" column="95" lean-forward="false" selection-start-line="197" selection-start-column="95" selection-end-line="197" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -256,12 +250,12 @@
       <updated>1490787611522</updated>
       <workItem from="1490787614091" duration="1006000" />
       <workItem from="1491017281781" duration="1226000" />
-      <workItem from="1501687206979" duration="204000" />
+      <workItem from="1501687206979" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2436000" />
+    <option name="totallyTimeSpent" value="2504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,7 +361,7 @@
     <entry file="file://$PROJECT_DIR$/layouts/layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="197" column="96" lean-forward="false" selection-start-line="197" selection-start-column="96" selection-end-line="197" selection-end-column="96" />
+          <caret line="197" column="95" lean-forward="false" selection-start-line="197" selection-start-column="95" selection-end-line="197" selection-end-column="95" />
           <folding />
         </state>
       </provider>

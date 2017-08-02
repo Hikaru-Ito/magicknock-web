@@ -442,3 +442,7 @@ footer {
     #advance-sns iframe {
       display: block;
       position: static; } }
+
+@media (max-width: 550px) {
+  .container {
+    width: 100%; } }
